@@ -22,14 +22,14 @@ body {
 }
 
 #header p {
-    font-size: 2rem;
+    font-size: 32px;
     color: red;
     font-weight: bold;
 }
 
 #header ul {
-    color: white;
-    font-size: 1.5rem;
+    color: palegoldenrod;
+    font-size: 20px;
     width: 30%;
     list-style: none;
     display: flex;
@@ -38,7 +38,7 @@ body {
 }
 
 a:hover {
-    cursor:pointer;
+    cursor: pointer;
 }
 
 #content {
@@ -47,4 +47,59 @@ a:hover {
     background-size: cover;
     background-position: center;
     opacity: 90%;
+}
+
+.homediv {
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.mainpara {
+    background: linear-gradient(to left, #ed1250 0%, #fbc99d 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 50%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.belowtext {
+    background: linear-gradient(to left, #ed1250 0%, #fbc99d 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.homediv button {
+    background-color: #ed1250;
+    color: white;
+    font-weight: bold;
+    margin-top: 32px;
+    font-size: 20px;
+    padding: 8px 16px;
+    border-radius: 16px;
+}
+
+.addDiv {
+    color: #fbc99d;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 70%;
+    width: 30vw;
+    height: 12vh;
+    padding: 32px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
 }
