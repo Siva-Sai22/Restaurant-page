@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +14,7 @@
 body {
     height: 100vh;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #header {
@@ -20,6 +24,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: fredoka, sans-serif;
 }
 
 #header p {
@@ -34,12 +39,18 @@ body {
     width: 30%;
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 a:hover {
     cursor: pointer;
+    color: #ed1250;
+    transition: 400ms;
+}
+
+.activelink {
+    color: #ed1250;
 }
 
 #content {
@@ -103,4 +114,42 @@ a:hover {
     align-items: center;
     justify-content: center;
     gap: 16px;
+}
+
+.menudiv {
+    background-color: #fff6da;
+    height: 100svh;
+}
+
+.menuheading {
+    font-size: 32px;
+    text-align: center;
+    padding: 24px;
+}
+
+.menuitems {
+    background-color: rgba(255, 68, 68, 0.28);
+    width: 75%;
+    margin: 0 auto;
+    border-radius: 16px;
+    padding: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.menuitem {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+.menuitemphoto {
+    width: 150px;
+}
+
+.menuitemheading {
+    font-size: 20px;
+    margin-bottom: 12px;
 }
